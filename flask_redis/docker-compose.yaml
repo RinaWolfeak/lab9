@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8000:5000" 
+    hostname: my-flask-app
+  redis:
+    hostname: redis
+    image: "redis:alpine"
